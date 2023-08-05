@@ -1,15 +1,27 @@
 import React from 'react';
 import './styles/index.css';
 import SelectUIPreset from './components/SelectUIPreset';
-import FrameSelectionComponent from './components/FrameSelectionComponent';
-import DescribeProductComponent from './components/DescribeProductComponent';
+import { Button } from '../../components/ui/button';
+// import FrameSelectionComponent from './components/FrameSelectionComponent';
+// import DescribeProductComponent from './components/DescribeProductComponent';
+
+const onHandleConsoleButon = () => {
+  parent.postMessage({ pluginMessage: { type: 'console' } }, '*');
+};
 
 function App() {
   return (
     <div className="">
       <SelectUIPreset />
-      <FrameSelectionComponent />
-      <DescribeProductComponent />
+      <Button
+        onClick={() => {
+          onHandleConsoleButon();
+        }}
+      >
+        Console
+      </Button>
+      {/* <FrameSelectionComponent />
+      <DescribeProductComponent /> */}
     </div>
   );
 }
