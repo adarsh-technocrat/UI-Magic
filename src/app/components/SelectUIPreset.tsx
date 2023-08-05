@@ -17,8 +17,8 @@ function SelectUIPreset() {
       <div id="scroll" className="flex flex-wrap pt-2">
         {listOfTags.map((tag, idx) => (
           <Badge
-            variant={tag === selectedTag ? 'destructive' : 'default'}
-            className={`cursor-pointer mr-2 mb-2`}
+            variant={tag === selectedTag ? 'primary' : 'default'}
+            className={`cursor-pointer mr-2 mb-2 rounded-sm`}
             onClick={() => {
               handleTagSelection(tag);
             }}
