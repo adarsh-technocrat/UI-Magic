@@ -20,6 +20,13 @@ function App() {
       >
         Console
       </Button>
+      <Button
+        onClick={() => {
+          parent.postMessage({ pluginMessage: { type: 'create-rectangles' } }, '*');
+        }}
+      >
+        Create Rectangle
+      </Button>
       {/* <FrameSelectionComponent />
       <DescribeProductComponent /> */}
     </div>
