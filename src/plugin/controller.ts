@@ -183,11 +183,24 @@ const generateMockUIWithAnimationForMobileAndDesktop = async () => {
   // Animation Container
   const animationContainer = figma.createFrame();
   const loadingText = figma.createText();
-  animationContainer.resize(375, 20);
-  animationContainer.fills = [{ type: 'SOLID', color: { r: 1, g: 1, b: 1 } }];
+  animationContainer.resize(375, 49);
+  animationContainer.fills = [
+    {
+      type: 'GRADIENT_LINEAR',
+      gradientStops: [
+        { position: 0, color: { r: 0.2, g: 0.4, b: 0.8, a: 0.3 } },
+        { position: 1, color: { r: 0.8, g: 0.2, b: 0.4, a: 0.4 } },
+      ],
+      gradientTransform: [
+        [1, 0, 0],
+        [0, 1, 0],
+      ],
+    },
+  ];
+
   loadingText.characters = 'Generating UI...';
-  loadingText.x = 0;
-  loadingText.y = 0;
+  loadingText.x = 143.2;
+  loadingText.y = 12.82;
   loadingText.textAlignVertical = 'CENTER';
   loadingText.textAlignHorizontal = 'CENTER';
   animationContainer.appendChild(loadingText);
@@ -205,14 +218,14 @@ const generateMockUIWithAnimationForMobileAndDesktop = async () => {
     dynamicComponent.fills = [{ type: 'SOLID', color: dynamicComponents[idx].color }];
     mobileFrame.appendChild(dynamicComponent);
     currentComponentHeight += dynamicComponents[idx].height;
-    mobileFrame.resizeWithoutConstraints(375, currentComponentHeight + 20);
+    mobileFrame.resizeWithoutConstraints(375, currentComponentHeight + 40);
     animationContainer.y = currentComponentHeight; // Moving the Position of the UI
 
     await delay(1000);
   }
 
-  // animationContainer.remove();
-  // mobileFrame.resizeWithoutConstraints(375, currentComponentHeight - 20);
+  animationContainer.remove();
+  mobileFrame.resizeWithoutConstraints(375, currentComponentHeight);
 };
 
 const generateJsonToFigmaComponent = (data: any) => {
