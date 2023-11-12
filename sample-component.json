@@ -1,0 +1,57 @@
+{
+    "error": false,
+    "status": 200,
+    "meta": {
+        "components": [
+            {
+                "key": "ee9c8f06092c5c6e90ae05150e6e9d319d3ac778",
+                "file_key": "eQ7H4hvYqOBg6uwqRPX5pA",
+                "node_id": "6:5",
+                "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/YHD/jRI/8Eh6xDblAVDdYURB/component_thumbnail_0.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCY7YC46MK%2F20231109%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231109T000000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=2eaed7597ccd229bfac0b333b89768cf7db7bc68e92335cdaccead15ae7358fe",
+                "name": "Sample Rectangle",
+                "description": "",
+                "description_rt": "",
+                "created_at": "2023-11-10T15:17:16.388Z",
+                "updated_at": "2023-11-10T15:17:16.388Z",
+                "containing_frame": {
+                    "name": "Group 1",
+                    "nodeId": "13:2",
+                    "pageId": "0:1",
+                    "pageName": "Page 1",
+                    "backgroundColor": "rgba(0, 0, 0, 0)",
+                    "containingStateGroup": null
+                },
+                "user": {
+                    "id": "1280533109927091343",
+                    "handle": "Adarsh Kumar Singh",
+                    "img_url": "https://s3-alpha.figma.com/profile/67a0f20d-167f-4a39-8303-641810047e05"
+                }
+            },
+            {
+                "key": "fddcadefc3a05bf8cb5fd76ec6ebad11e63a5ca7",
+                "file_key": "eQ7H4hvYqOBg6uwqRPX5pA",
+                "node_id": "16:12",
+                "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/vAL/Hsf/ZFQUiGBoeRCmUbgd/component_thumbnail_0.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCY7YC46MK%2F20231109%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231109T000000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=da4fbabf0c799128d17d051d52d60fa8fa016f5fc57b339380a7ae0e0174c518",
+                "name": "memoji",
+                "description": "",
+                "description_rt": "",
+                "created_at": "2023-11-10T15:21:27.288Z",
+                "updated_at": "2023-11-10T15:21:27.288Z",
+                "containing_frame": {
+                    "name": "Group 1",
+                    "nodeId": "16:13",
+                    "pageId": "0:1",
+                    "pageName": "Page 1",
+                    "backgroundColor": "rgba(0, 0, 0, 0)",
+                    "containingStateGroup": null
+                },
+                "user": {
+                    "id": "1280533109927091343",
+                    "handle": "Adarsh Kumar Singh",
+                    "img_url": "https://s3-alpha.figma.com/profile/67a0f20d-167f-4a39-8303-641810047e05"
+                }
+            }
+        ]
+    },
+    "i18n": null
+}

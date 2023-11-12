@@ -22,13 +22,18 @@ function App() {
       </Button>
       <Button
         onClick={() => {
-          parent.postMessage({ pluginMessage: { type: 'create-rectangles' } }, '*');
+          parent.postMessage({ pluginMessage: { type: 'create-dublicate' } }, '*');
         }}
       >
-        Create Rectangle
+        Dublicate
       </Button>
-      {/* <FrameSelectionComponent />
-      <DescribeProductComponent /> */}
+      <Button
+        onClick={() => {
+          parent.postMessage({ pluginMessage: { type: 'generate-ui' } }, '*');
+        }}
+      >
+        Generate UI
+      </Button>
     </div>
   );
 }
